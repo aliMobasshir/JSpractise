@@ -1,5 +1,7 @@
+//object is a collection of properties.
+
 //objects can be created in 2 ways
-//1-Singleton  -----------> Object.create
+//1-Singleton  -----------> // const me = new Object()
 
 //2-Object literals
 
@@ -43,3 +45,4 @@ JsUser.greetingTwo = function(){
 JsUser.greeting()                         //calling the functions
 JsUser.greetingTwo()                      //calling the functions
 
+console.log(JsUser);       //printing the object
