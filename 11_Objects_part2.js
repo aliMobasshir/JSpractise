@@ -61,3 +61,23 @@ console.log(Object.keys(tinderUser));    //prints keys of the object
 console.log(Object.values(tinderUser));  //prints values of the object
 
  console.log(tinderUser.hasOwnProperty("isLoggedIn")); // check if a property is present or not
+
+ const course = {
+    coursename : "js in hindi",
+    teacher : "hitesh",
+    fee : "frameElement"
+ }
+
+ //console.log(course.coursename);
+
+ //but suppose if we have to use coursename multiple times all over the program then writing course.coursename each time is a hectic task so what we can do is:
+
+ //const {coursename}=course // by this we can now directly use coursename
+ //console.log(coursename); 
+
+ //we can also give it another name in case of convenience
+ const {coursename:cn}=course
+ console.log(cn);
+ 
+ 
+ 
