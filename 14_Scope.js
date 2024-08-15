@@ -7,6 +7,9 @@ if(true){
 }
 //console.log(a);
 //console.log(b);
+if(true){
+    //console.log(a+b);
+}
 
 //child function(or other) can access parent items.
 //parent function(or other) can't acces child items.
@@ -34,4 +37,13 @@ if (true){
 //console.log(username);
 
 
-//basically jo items kisi {} ke ander declare hue hain wo bas {} k ander hi exist kerte hain aur access kiye jaa skte hain
+//basically jo items kisi {}(functions,conditionals etc) ke ander declare hue hain wo bas {} k ander hi exist kerte hain aur access kiye jaa skte hain per ander wale bahar wale ko access ker skte hain.
+
+ count = 0;
+function incrementcounter() {
+    count++
+}
+incrementcounter()
+incrementcounter()
+incrementcounter()
+console.log(count);

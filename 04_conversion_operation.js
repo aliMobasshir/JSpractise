@@ -1,13 +1,13 @@
-//we can convert the datatype of a value by usig conversion opearation
+//we can convert the datatype of a value by usig conversion operation
 // syntax=> let <-converted_var_name-> = <=datatype_to_which_converted=>(var_name) 
 
 let score = 45
 console.log(score);
 console.log(typeof(score));
 
-let stringscore = String(score)
+let stringscore = String(score)  //conversion statement
 console.log(stringscore)
-console.log(typeof(stringscore))  //conversion statement
+console.log(typeof(stringscore))  
 
 // ----------------------------------------------------------------------------------------------//
 
