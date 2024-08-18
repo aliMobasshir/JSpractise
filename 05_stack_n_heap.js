@@ -36,6 +36,4 @@ console.log(usertwo.email);
 
 /*in heap : no clone is made but real value location is referred , thats why when we changed the value of usertwo's email the userone's email also got changed, because both are referrig to the same memory location*/
 
-//note=> the datatype used in heap's example is object and will be discussed further.
-
 //head to notebook notes for better understanding.
