@@ -1,6 +1,7 @@
 
-/*primitive data types are stored in stack memory
-non-primitive data types are stored in heap memory */
+/*primitive data types are stored in stack memory(copying mechanism=shallow copy)
+
+non-primitive data types are stored in heap memory(copying mechanism = deep copy) */
 
 
 //stack example=>
