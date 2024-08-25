@@ -1,9 +1,9 @@
 const marvel_heroes = ["thor","ironman","spiderman"]
 const dc_heroes = ["batman","superman","aquaman"]
 
-marvel_heroes.push(dc_heroes)                 //---------> //pushes the whole 2nd array as a single element
+//marvel_heroes.push(dc_heroes)                 //---------> //pushes the whole 2nd array as a single element
 
-console.log(marvel_heroes)
+//console.log(marvel_heroes)
 //console.log(marvel_heroes[3][1])             ---------->       //elements of the nested array can be accessed in this manner 
 
 //const allHeroes = marvel_heroes.concat(dc_heroes)

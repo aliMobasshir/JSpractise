@@ -15,7 +15,7 @@ function addTwoNumbers (number1,number2){
 console.log(number1+number2);}
 //addTwoNumbers(5,8)
 
-//what if we store it into a var
+//what if we store it into a data storage
 
 //const result = addTwoNumbers(5,3)
 //console.log("result:",result);
@@ -27,7 +27,7 @@ function add2Numbers(num1,num2){
     return num1 +num2
 }
 const result = add2Numbers(5,3)
-console.log("result:",result);
+//console.log("result:",result);
 
 //note the result inside function and outside will function here are being treated differently
 
@@ -45,7 +45,7 @@ function loginUserMessage2(username){
 //to prevent that:
 function loginUserMessage3(username){
     if(!username){ // ! tells that the value is either undefined or null 
-        console.log("please enter a username");
+        return ("please enter a username");
     }
     else{
         return `${username} just logged in` 
@@ -53,7 +53,8 @@ function loginUserMessage3(username){
       
     }
 
-    console.log(loginUserMessage3("Ali"));
+    console.log(loginUserMessage3());
+    console.log(loginUserMessage3("ali"));
     
 
 

@@ -8,19 +8,19 @@ const repocount = 2
 
 //console.log(name + repocount + "letsgo")   (not recommended)
 
-console.log( `hello my name is ${name} and my repo count is ${repocount}`);  //(recommended)
+//console.log( `hello my name is ${name} and my repo count is ${repocount}`);  //(recommended)
 
 //way 2 (better,supports protocols)(object)  :-
 
 const gameName = new String("clash-of-clans")
-console.log(gameName);
+//console.log(gameName);
 
 //some functions we can use now are:-
 
 console.log(gameName[0]);     //prints character at index 0
 
-console.log(gameName.length);    // states length
-console.log(gameName.toUpperCase()); //converts into uppercase
+//console.log(gameName.length);    // states length
+//console.log(gameName.toUpperCase()); //converts into uppercase
 
 console.log(gameName.charAt(2));    //states character at index 
 console.log(gameName.indexOf('h'));  //states index of desired character

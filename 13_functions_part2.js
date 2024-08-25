@@ -19,21 +19,25 @@ function handleObject(anyObject){
 
 //or we can also:
 
-handleObject({
-    username:"Mubashshir",
-    age:"21"
-})
+// handleObject({
+//     username:"Mubashshir",
+//     age:"21"
+// })
 
 //Using functions for Arrays----------------------------:-
 
 const myArray = [200,500,300,100]
 
 function returnSecondValue(getArray) {
-    return getArray[1]
+    let sum=0;
+    for (let index = 0; index < getArray.length; index++) {
+        sum = sum + getArray[index]
+    }
+    console.log(sum);
 }
 
-//console.log(returnSecondValue(myArray));
+returnSecondValue(myArray);
 
 //or we can also
 
-console.log(returnSecondValue([200,400,300,100]));
+//console.log(returnSecondValue([200,400,300,100]));

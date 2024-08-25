@@ -34,7 +34,7 @@ const obj4 ={obj1,obj2,obj3}    //just containing
  //console.log(obj5);
 
 const obj6 ={...obj1,...obj2,...obj3}  //merging them
-//console.log(obj5);
+console.log(obj5);
 
 //on backend we usually get arrays of objects as:
 
@@ -52,15 +52,15 @@ const users = [
         email:"3@gmail.com"
     }
 ]
-//console.log(users[0]);
+console.log(users[0]);
 
 //.....................................
 
-console.log(tinderUser);
-console.log(Object.keys(tinderUser));    //prints keys of the object
-console.log(Object.values(tinderUser));  //prints values of the object
+//console.log(tinderUser);
+//console.log(Object.keys(tinderUser));    //prints keys of the object
+//console.log(Object.values(tinderUser));  //prints values of the object
 
- console.log(tinderUser.hasOwnProperty("isLoggedIn")); // check if a property is present or not
+ //console.log(tinderUser.hasOwnProperty("isLoggedIn")); // check if a property is present or not
 
  const course = {
     coursename : "js in hindi",
@@ -77,7 +77,7 @@ console.log(Object.values(tinderUser));  //prints values of the object
 
  //we can also give it another name in case of convenience
  const {coursename:cn}=course
- console.log(cn);
+ //console.log(cn);
  
  
  

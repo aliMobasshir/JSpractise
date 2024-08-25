@@ -30,7 +30,7 @@ if (true){
     const username = "Ali"
     if (username ==="Ali"){
         const website =" Healway"
-        console.log(username + website)  
+        //console.log(username + website)  
     }
     //console.log(website)
 }

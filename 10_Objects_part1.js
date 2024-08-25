@@ -26,15 +26,15 @@ const JsUser = {
 
 //console.log(JsUser["full name"]);            //it can't be accessed by .
 
-console.log(JsUser[mySym]);                    //"" not needed for symbol because it's already in [] format and not in ""
+//console.log(JsUser[mySym]);                    //"" not needed for symbol because it's already in [] format and not in ""
 
-//JsUser.email ="alimobasshir@gmail.com"       //access object values
+JsUser["email"] ="alimobasshir@gmail.com"       //access object values
 //console.log(JsUser["email"]); 
 
 //Object.freeze(JsUser)                      //used to freeze values of an object(cannot be changed further)
 
 //JsUser.email="jnkejfijeipj"               //will not shown becuase of freeze
-//console.log(JsUser);  
+console.log(JsUser);  
 
 JsUser.greeting = function(){              //creating a function called greeting
     console.log("Hello JS user");
@@ -45,4 +45,4 @@ JsUser.greetingTwo = function(){
 JsUser.greeting()                         //calling the functions
 JsUser.greetingTwo()                      //calling the functions
 
-console.log(JsUser);       //printing the object
+//console.log(JsUser);       //printing the object
