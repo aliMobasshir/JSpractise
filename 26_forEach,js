@@ -1,5 +1,13 @@
+//important 
+
 //not really a loop but a method
 // The forEach method is used to execute a function on each element of an array. It takes a callback function as an argument and executes that function once for each element in the array.
+
+//syntax
+// array.forEach(function (element, index, array) {                  
+//     // code to be executed for each element
+//   });
+  
 
 const coding = ["js", "ruby", "java", "python", "cpp"]
 
