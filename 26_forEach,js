@@ -1,0 +1,48 @@
+//not really a loop but a method
+// The forEach method is used to execute a function on each element of an array. It takes a callback function as an argument and executes that function once for each element in the array.
+
+const coding = ["js", "ruby", "java", "python", "cpp"]
+
+// coding.forEach( function (val){            //call back function doesnt have name
+//     console.log(val);
+// } )
+
+// coding.forEach( (item) => {
+//     console.log(item);
+// } )
+
+//or we can separately create a function and use it in the forEach method
+
+// function printMe(item){
+//     console.log(item);
+// }
+
+// coding.forEach(printMe)
+
+//apart from the direct element we can also access index and whole array:-
+
+// coding.forEach( (item, index, arr)=> {
+//     console.log(item, index, arr);
+// } )
+
+// important- we can use it for array of objects:-
+
+const myCoding = [
+    {
+        languageName: "javascript",
+        languageFileName: "js"
+    },
+    {
+        languageName: "java",
+        languageFileName: "java"
+    },
+    {
+        languageName: "python",
+        languageFileName: "py"
+    },
+]
+
+myCoding.forEach( (item) => {     //when we pass parameter as item or anything else not elememts will be referred by that name
+    
+    console.log(item.languageName);
+} )

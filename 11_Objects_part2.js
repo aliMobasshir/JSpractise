@@ -57,7 +57,7 @@ console.log(users[0]);
 //.....................................
 
 //console.log(tinderUser);
-//console.log(Object.keys(tinderUser));    //prints keys of the object
+console.log(Object.keys(tinderUser));    //prints keys of the object
 //console.log(Object.values(tinderUser));  //prints values of the object
 
  //console.log(tinderUser.hasOwnProperty("isLoggedIn")); // check if a property is present or not
