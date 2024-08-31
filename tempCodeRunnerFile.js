@@ -1,5 +1,1 @@
-const programming = ["js", "rb", "py", "java", "cpp"]
-
-for (const key in programming) {
-    //console.log(programming[key]);
-}
+onst myTotal = myNums.reduce( (acc, curr) => acc+curr, 0)
