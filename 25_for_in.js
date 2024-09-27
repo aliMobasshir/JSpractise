@@ -1,6 +1,6 @@
-//for in geneally used for objects
+//for in generally used for objects
 
-// The for in loop in JavaScript is used to iterate over the enumerable properties of an object. It allows you to loop through the keys (or properties) of an object. Here's the syntax:
+// The for in loop in JavaScript is used to iterate over the enumerable properties of an object. It allows you to loop through the keys of an object. Here's the syntax:
 
 // for (variable in object) {
 //     // code to be executed for each property
@@ -14,17 +14,17 @@ const myObject = {
 }
 
 for (const key in myObject) {
-   // console.log(`${key} shortcut is for ${myObject[key]}`);
-    //console.log(key);
+    //console.log(`${key} shortcut is for ${myObject[key]}`);
+   // console.log(key);
 }
 
 const programming = ["js", "rb", "py", "java", "cpp"]
 
 for (const key in programming) {
-    //console.log(programming[key]);
+   // console.log(programming[key]);
 }
 
-//map cant be iterated by for in:
+// map cant be iterated by for in:
 // const map = new Map()
 // map.set('IN', "India")
 // map.set('USA', "United States of America")

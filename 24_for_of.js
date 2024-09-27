@@ -22,25 +22,25 @@ for (const num of arr) {
 // loop iterates over each element in the arr array, and num holds the value of each element during each iteration.
 
 const greetings = "Hello world!"
-for (const greet of greetings) {
-    //console.log(`Each char is ${greet}`)
+for (let characters of greetings) {
+    console.log(`Each char is ${characters}`)
 }
 
 // Maps-a Map is a collection of key-value pairs where both keys and values can be of any data type. Unlike plain JavaScript objects, which only allow strings or symbols as keys,
 //also doesnt allow repeation
 
-const map = new Map()
-map.set('IN', "India")
-map.set('USA', "United States of America")
-map.set('Fr', "France")
-map.set('IN', "India")
+const mymap = new Map()
+mymap.set('USA', 'United States of America')
+mymap.set('Fr', "France")
+mymap.set('IN', "India")
+mymap.set('IN', "India")
 
 
-//  console.log(map);
+ //console.log(mymap);
 
-for (const [key, value] of map) {            // by [key,value we destructured the array into key and values]   
+for (const [key, value] of mymap) {          // by [key,value we destructured the array into key and values]   
     // console.log(key, ':-', value);
-    // console.log(key);
+     //console.log(key);
 }
 
 const myObject = {
@@ -48,9 +48,9 @@ const myObject = {
     game2: 'Spiderman'
 }
 
-// for (const [key, value] of myObject) {
-//     console.log(key, ':-', value);
+for (const [key, value] of myObject) {
+    console.log(key, ':-', value);
     
-// }
+}
 
 //we are unable to iterate objects by the for of loop, so for objects we have for in loop...

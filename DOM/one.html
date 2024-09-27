@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM elements selection</title>
+</head>
+<body>
+    <!-- Let's look at an example: -->
+<h1 id="page-title">Phonebook</h1>
+
+<p class="family">Marie</p>
+<p class="family">Jose</p>
+<p class="work">Anne</p>
+<p class="work">Joan</p>
+</body>
+</html>
+<!-- The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of a document as a tree of objects, where each object corresponds to a part of the document, such as elements, attributes, and text. JavaScript can manipulate this tree structure, allowing developers to dynamically alter the content and appearance of a webpage. -->
+
+
+<!-- Accessing the elements:--->
+
+<!-- The h1 header has an id value of page-title. -->
+
+<!--
+ 1. getElementById
+selects an element by it's Id
+ -->
+
+<!-- Here is how you can select it using the getElementById method: -->
+
+<!-- <script>
+const titleElement = document.getElementById("page-title")
+console.log(titleElement)
+</script> -->
+
+<!-- The example selects the h1 element and assigns it to the titleElement variable and then prints it -->
+
+<!--
+ 2. getElementsByClassName
+You can use this method to select more than one object. -->
+
+<!-- <script> const famContacts = document.getElementsByClassName("family")
+console.log(famContacts)</script> -->
+
+<!-- This returns an HTML collection of all elements with the given class. The log statement will print them in the console. -->
+
+<!-- Note: The HTML collection looks like an array, but it is not. You can access the elements using bracket notation just as you would with an array but you cannot apply array methods like map, filter, and forEach on it. -->
+
+<!-- <script>(famContacts[1])</script> -->
+ <!-- This will get the first element in the HTML collection, which is the paragraph with the name Marie.
+
+ But what if you wanted to loop through all the elements in the famContacts HTML collection? You'd first need to convert the HTML collection into an array. Then you could use any of the array methods. -->
+
+ <!-- <script>
+let famcontactsArray= Array.from(famContacts);
+famcontactsArray.forEach(element => console.log(element)
+)  </script> -->
+ 
+ <!-- 
+ 3. getElementsByTagName
+ This method will select elements using their tag name. -->
+
+ <!-- <script>const allContacts = document.getElementsByTagName('p')
+console.log(allContacts)
+
+let allContactsArray = [...allContacts]
+allContactsArray.map(element => console.log(element))
+</script> -->
+
+<!-- 
+4. querySelector()
+You can use this method to select any HTML element in the DOM. It returns only one element: the first element that matches the given selector.
+
+The querySelector method works like how CSS selectors work.
+ -->
+
+ <script>const firstWorkContact = document.querySelector('.work')
+console.log(firstWorkContact)</script>
+
+<!-- Let's see another example to show how querySelector works like CSS selectors. -->
+
+<div>
+    <button>First button</button>
+    <button>Second button</button>
+    <button>Third button</button>
+    <button>Fourth button</button>
+</div>
+
+<!-- Assuming you wanted to select the third button -->
+
+<script>const thirdBtn = document.querySelector('div button:nth-child(3)')
+console.log(thirdBtn)</script>
+
+<!-- But what if you want to select all four button elements and not only the first one?  -->
+
+<!-- 
+5. querySelectorAll
+ -->
+
+ <script>const allBtns = document.querySelectorAll('button');
+ console.log(allBtns);</script>
+
+<!-- Note: querySelectorAll returns a NodeList. A NodeList is slightly different from an HTML collection. You don't need to convert it to an array to apply a method like forEach on it. -->
+
+<script>allBtns.forEach(btn => console.log(btn))</script>

@@ -2,6 +2,7 @@
 
 //not really a loop but a method
 // The forEach method is used to execute a function on each element of an array. It takes a callback function as an argument and executes that function once for each element in the array.
+//it is a combination of elements thier indices and whole array operations.
 
 //syntax
 // array.forEach(function (element, index, array) {                  
@@ -11,9 +12,9 @@
 
 const coding = ["js", "ruby", "java", "python", "cpp"]
 
-// coding.forEach( function (val){            //call back function doesnt have name
-//     console.log(val);
-// } )
+coding.forEach( function (val){            //call back function doesnt have name
+   // console.log(val);
+} )
 
 // coding.forEach( (item) => {
 //     console.log(item);
@@ -33,7 +34,7 @@ const coding = ["js", "ruby", "java", "python", "cpp"]
 //     console.log(item, index, arr);
 // } )
 
-// important- we can use it for array of objects:-
+// important- we can use it for an array of objects:-
 
 const myCoding = [
     {
@@ -52,5 +53,13 @@ const myCoding = [
 
 myCoding.forEach( (item) => {     //when we pass parameter as item or anything else not elememts will be referred by that name
     
-    console.log(item.languageName);
+   // console.log(item.languageName);
 } )
+
+// Array of user objects
+const users = [
+    { name: "John Doe", email: "john@example.com" },
+    { name: "Jane Smith", email: "jane@example.com" },
+    { name: "Alice Johnson", email: "alice@example.com" }
+  ];
+  

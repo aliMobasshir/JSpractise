@@ -1,4 +1,4 @@
-//some values are by default true knows as truthy values, some are false known as falsy values
+//some values are by default true which known as truthy values, some are false known as falsy values
 const userEmail = []
 
 if (userEmail) {
@@ -6,7 +6,7 @@ if (userEmail) {
 } else {
     console.log("Don't have user email");
 }
-//if condition got executed an empty array is a truthy value
+//if condition got executed bcz an empty array is a truthy value
 
 
 // falsy values:-
@@ -16,6 +16,8 @@ if (userEmail) {
 // "0", 'false', " ", [], {}, function(){}  and everything else
 
 //------------------------------------------------<>-----------------------------------------------------------
+
+//extra
 
 if (userEmail.length === 0) {
     console.log("Array is empty");

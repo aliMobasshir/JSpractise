@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>content and attributes manipulation</title>
+</head>
+<body>
+    <!-- So far you've learned about different ways to select DOM elements. But that is only the beginning. Now, let's see how you can manipulate the DOM to change the content of a webpage. -->
+
+    <!-- The innerHTML Property
+This is a method that allows you to read or update both the structure and content of elements. -->
+
+<!-- example -->
+
+<p id="topic">JS array methods<span>this will only visible using innerHTML</span></p>
+  <p id="first-method">map</p>
+  <p id="second-method">filter</p>
+
+ <script>const topicElement = document.querySelector('#topic')
+console.log(topicElement.innerHTML)
+
+//  Now, let's say you want to update the topic to "JavaScript array methods". 
+
+topicElement.innerHTML = "javascript array methods";
+   console.log(topicElement.innerHTML);
+</script>
+
+<!-- The innerText and textContent Properties -->
+
+<!-- Both innerText and textContent ignore HTML tags and treat them as part of a string. You can use both methods to read or update the text of DOM elements. -->
+
+<!-- innerText returns the text as it appears on the screen (without the value of the key which is hidden with CSS). And textContent returns the text including hidden elements and whitespaces. -->
+
+<!-- attributes manipulation -->
+
+<!-- The getAttribute Method --
+
+Like the name suggests, you can use this method to get the value of an existing attribute on an element.
+
+It accepts an argument (the name of the attribute) and returns the value of the attribute. If the attribute you passed to it as an argument does not exist on the element, the method will return null.
+
+Here's an example: -->
+<img src="image.jpg" alt="An example image">
+
+<script>const imageElement = document.querySelector('img')
+console.log(imageElement.getAttribute('src'))</script>
+
+<!-- The setAttribute Method --
+
+This is used to set or change the attribute of an element. The method takes in two arguments. The first argument is the name of attribute you want to change, and the second is the new value you want to give the attribute. -->
+
+<script>imageElement.setAttribute('src','new-image.jpg')
+    console.log(imageElement.getAttribute('src'));
+</script>
+
+<!-- When you pass an argument to the setAttribute method and that attribute doesn't exit on the element, it will create a new attribute. -->
+
+<script>console.log("BEFORE:", imageElement.getAttribute('height'))
+    imageElement.setAttribute('height', '200')
+    console.log("AFTER:", imageElement.getAttribute('height'))</script>
+
+<!-- The removeAttribute Method --
+You can use the removeAttribute method. You pass in the name of the attribute you want to remove from the element as arguments to the method. -->
+
+<script>console.log("BEFORE:", imageElement.getAttribute('height'))
+    imageElement.removeAttribute('height', '200')
+    console.log("AFTER:", imageElement.getAttribute('height'))</script>
+
+</body>
+</html>

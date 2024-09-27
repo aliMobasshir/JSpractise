@@ -32,23 +32,23 @@ switch (month) {
 
 //similarly ex-2
 
-const monthNumber = "3"
+// const monthNumber = "3"
 
-switch (monthNumber) {
-    case "1":
-        console.log("January");
-        break;
-    case "2":
-        console.log("feb");
-        break;
-    case "3":
-        console.log("march");
-        break;
-    case "4":
-        console.log("april");
-        break;
+// switch (monthNumber) {
+//     case "1":
+//         console.log("January");
+//         break;
+//     case "2":
+//         console.log("feb");
+//         break;
+//     case "3":
+//         console.log("march");
+//         break;
+//     case "4":
+//         console.log("april");
+//         break;
 
-    default:
-        console.log("not the first 4 months");
-        break;
-}
+//     default:
+//         console.log("not the first 4 months");
+//         break;
+// }

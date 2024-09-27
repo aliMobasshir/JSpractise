@@ -1,7 +1,7 @@
 //array.reduce(callback(accumulator, currentValue) => operation, initialValue);
 
 // where the accumulator first gets the value of initialValue and then starts getting the value of operations
-//currentvalue is the value of the elements of the array
+//currentvalue is the iterarive value of the elements of the array
 
 // const numbers = [1, 2, 3, 4, 5];
 
@@ -44,7 +44,7 @@ const shoppingCart = [
 ]
 
 const priceToPay = shoppingCart.reduce((acc,item) => acc + item.price,0); 
-console.log(priceToPay);
+//console.log(priceToPay);
 
 //similarly we can chain it too
 
