@@ -1,0 +1,89 @@
+:root{
+   --primary-color:rgb(75, 77, 77);
+   --secondary-color:yellow;
+   --hover-color: rgb(196, 196, 34);
+   --content-color:white;
+   --inputBox-color:beige;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.page1{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:var(--primary-color) ;
+}
+#lightMode {
+    position: absolute;
+    top: 15px;    
+    right: 25px;  
+    cursor: pointer;
+}
+.container{
+   
+    background-color: var(--primary-color);
+    min-width: 50vw;
+    min-height: 75vh;
+    color: var(--content-color);
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid var(--secondary-color);
+    gap: 25px;
+    font-family: monospace;
+    padding: 25px;
+    box-shadow: 0px 0px 40px  black;
+}
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+}
+#guessheading{
+    font-size: 38px;
+}
+#userGuess{
+    font-size: large;
+    padding: 15px;
+    border-radius: 15px;
+    background-color:var(--inputBox-color) ;
+    border: 2px solid black;
+}
+
+#btn{
+    padding: 15px 40px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-family:monospace;
+    background-color: var(--secondary-color);
+    cursor: pointer;
+}
+#btn:hover{
+    background-color: var(--hover-color);
+}
+#btn:active{
+    background-color: grey;
+}
+.logs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+#retry button{
+    padding: 15px 40px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-family:monospace;
+    background-color: var(--secondary-color);
+    cursor: pointer;  
+}
